@@ -13,9 +13,11 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
         </header>
           {/*使用自定的测试组件*/}
-          <Test></Test>
-          <Test></Test>
-          <Clock name="clockOne"></Clock>
+          {/*原来自定义的组件在使用的时候不需要配对的标签，直接用闭合标签就好了，这样还不会提示下划线警告*/}
+          <Test/>
+          <Test/>
+          <Clock name="clockOne"/>
+          <Clock name="clockTwo"/>
       </div>
     );
   }

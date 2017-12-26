@@ -2,7 +2,7 @@
  * Created by zhangwei36 on 2017/12/26.
  */
 import React from 'react';
-
+// 组件类继承自React.Component
 class Clock extends React.Component {
     constructor (props){
         // super 一下 props之后就可以在下面使用propsl了
@@ -23,7 +23,7 @@ class Clock extends React.Component {
     componentWillUnmount() {
         clearInterval(this.timerId);
     }
-    // 更新状态的方法
+    // 更新状态的方法,state中定义的状态不能直接改变，只能通过setState方法来更新state里面的值
     tick(){
         this.setState({
             date : new Date()
@@ -41,4 +41,5 @@ class Clock extends React.Component {
         );
     }
 }
+// 导出Clcok类
 export default Clock;
