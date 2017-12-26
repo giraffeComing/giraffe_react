@@ -4,14 +4,11 @@
 import React from 'react';
 
 class Clock extends React.Component {
-
     constructor (props){
+        // super 一下 props之后就可以在下面使用propsl了
         super(props);
-        // 查看父组件传过来的数据
-        console.log(props);
         // 赋值给组件内部的属性，其实应该就是state
-        this.props = props;
-
+        // state定义了之后不能直接更新状态，而是要使用this.setState方法
         this.state = {
             date : new Date()
         }
@@ -33,6 +30,7 @@ class Clock extends React.Component {
         })
     }
     render() {
+        // 使用props
         // 注意this.state.date后面要加上toLocaleTimeString方法，不然会报个错
         return (
             <div>
@@ -43,5 +41,4 @@ class Clock extends React.Component {
         );
     }
 }
-
 export default Clock;
