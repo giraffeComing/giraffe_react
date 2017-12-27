@@ -5,6 +5,7 @@ import './App.css';
 import Test from './component/test/test';
 import Clock from './component/clock/clock';
 import ClickEvent from './component/clickEvent/clickEvent'
+import {Condition,Condition2} from './component/condition/condition'
 
 class App extends Component {
   render() {
@@ -20,6 +21,8 @@ class App extends Component {
           <Clock name="clockOne"/>
           <Clock name="clockTwo"/>
           <ClickEvent/>
+          <Condition/>
+          <Condition2/>
       </div>
     );
   }
