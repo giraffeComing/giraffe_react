@@ -1,3 +1,13 @@
-.click-block{
+.click-event{
     cursor: pointer;
+    float: left;
+    padding-top: 5px;
+}
+.click-block{
+    padding: 2px 10px;
+}
+.click-block:hover{
+    background: coral;
+    color: #fff;
+    transition: all .5s;
 }
