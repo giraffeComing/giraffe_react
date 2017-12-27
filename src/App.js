@@ -4,6 +4,7 @@ import './App.css';
 // 引入测试组件
 import Test from './component/test/test';
 import Clock from './component/clock/clock';
+import ClickEvent from './component/clickEvent/clickEvent'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <Test/>
           <Clock name="clockOne"/>
           <Clock name="clockTwo"/>
+          <ClickEvent/>
       </div>
     );
   }

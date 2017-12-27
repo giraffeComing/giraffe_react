@@ -2,6 +2,8 @@
  * Created by zhangwei36 on 2017/12/26.
  */
 import React from 'react';
+// 记得导入样式表
+import './clock.css'
 // 组件类继承自React.Component
 class Clock extends React.Component {
     constructor (props){
@@ -33,7 +35,7 @@ class Clock extends React.Component {
         // 使用props
         // 注意this.state.date后面要加上toLocaleTimeString方法，不然会报个错
         return (
-            <div>
+            <div className="clock-block">
                 <div>Hi~</div>
                 <div>{this.props.name}</div>
                 <div>{this.state.date.toLocaleTimeString()}</div>
